@@ -8,11 +8,10 @@ export function AppRoutes() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/Cadastro_Login_Firebase" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/tool" element={<Tool />} />
       </Routes>
     </BrowserRouter>
   );
 }
-""
