@@ -21,7 +21,6 @@ export function load(){
         Swal.close();
       }, 2000);
 
-      console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 }
 
 export function sucess(){
@@ -70,8 +69,6 @@ export function load_cad(){
       // Fecha a notificação após 2 segundos
       Swal.close();
     }, 2000);
-
-    console.log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 }
 
 export function sucess_cad(){
