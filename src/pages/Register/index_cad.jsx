@@ -91,7 +91,7 @@ export function Register() {
         </button>
         <div className="footer">
           <p>Você já tem uma conta?</p>
-          <Link to="/">Faça login aqui</Link>
+          <Link to="/Cadastro_Login_Firebase">Faça login aqui</Link>
         </div>
       </form>
     </div>
