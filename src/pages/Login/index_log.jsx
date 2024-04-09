@@ -61,7 +61,26 @@ export function Login() {
 
 
   function handleForgotPassword() {
-    ForgotPassword();
+          Swal.fire({
+        title: "Esqueceu sua senha?",
+        text: "Digite seu e-mail para redefinir a senha:",
+        input: "email",
+        inputPlaceholder: "lovelace@gmail.com",
+        showCancelButton: true,
+        confirmButtonText: "Enviar",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          const email = result.value;
+          sendPasswordResetEmail(auth, email)
+            .then(() => {
+              Swal.fire("Sucesso!", "Um e-mail de redefinição de senha foi enviado para " + email, "success");
+            })
+            .catch((error) => {
+              console.error(error);
+              Swal.fire("Erro", "Não foi possível enviar o e-mail. Verifique o seu endereço de e-mail.", "error");
+            });
+        }
+      });
   }
   
 
