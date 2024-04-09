@@ -5,10 +5,10 @@ import arrowImg from "../../assets/arrow.svg";
 import { auth } from "../../services/firebaseConfig";
 import { load, sucess, fail }  from "../../services/alert.js";
 import { sendPasswordResetEmail } from "firebase/auth";
+import Swal from 'sweetalert2';
+
 
 import "./styles.css";
-
-import Swal from 'sweetalert2';
 
 export function Login() {
   const [email, setEmail] = useState("");
@@ -61,7 +61,7 @@ export function Login() {
 
 
   function handleForgotPassword() {
-          Swal.fire({
+      Swal.fire({
         title: "Esqueceu sua senha?",
         text: "Digite seu e-mail para redefinir a senha:",
         input: "email",
