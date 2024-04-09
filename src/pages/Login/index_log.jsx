@@ -4,8 +4,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import arrowImg from "../../assets/arrow.svg";
 import { auth } from "../../services/firebaseConfig";
 import { load, sucess, fail }  from "../../services/alert.js";
-import { sendPasswordResetEmail } from "firebase/auth";
 import Swal from 'sweetalert2';
+import { sendPasswordResetEmail } from "firebase/auth";
+
 
 
 import "./styles.css";
