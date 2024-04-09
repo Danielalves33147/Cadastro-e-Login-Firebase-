@@ -102,7 +102,7 @@ export function fail(){
 }
 
 
-export function ForgotPassword() {
+/*export function ForgotPassword() {
   Swal.fire({
     title: "Esqueceu sua senha?",
     text: "Digite seu e-mail para redefinir a senha:",
@@ -124,3 +124,4 @@ export function ForgotPassword() {
     }
   });
 }
+*/ 
