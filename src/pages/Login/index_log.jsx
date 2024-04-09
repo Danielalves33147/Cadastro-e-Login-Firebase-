@@ -3,7 +3,7 @@ import { useSignInWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { Link, useNavigate } from 'react-router-dom';
 import arrowImg from "../../assets/arrow.svg";
 import { auth } from "../../services/firebaseConfig";
-import { load, sucess, fail, ForgotPassword }  from "../../services/alert.js";
+import { load, sucess, fail }  from "../../services/alert.js";
 import { sendPasswordResetEmail } from "firebase/auth";
 
 import "./styles.css";
